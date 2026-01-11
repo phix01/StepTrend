@@ -1,0 +1,42 @@
+.products-wrapper {
+    width: 100%;
+    padding: 50px 10%;
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .filter-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.filter-buttons button {
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  border: 1px solid #098115;
+  background-color: white;
+  color: #098115;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: #098115;
+  color: white;
+}
+
+.filter-buttons button.active {
+  background: linear-gradient(270deg, #a16eff, #d8b3ff);
+  color: #000;
+  border: none;
+  box-shadow: 0 0 8px rgba(161, 110, 255, 0.7);
+}

@@ -1,0 +1,49 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* İstersen #282c34 yap */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  border-bottom: 1px solid #eee;
+  z-index: 99;
+  height: 60px; /* Yükseklik ekledim */
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 5s ease infinite;
+  font-weight: bold;
+  font-size: 2.5rem; /* İstersen büyüklük ayarla */
+  font-family: 'Poppins', sans-serif; /* Google Fonts ile eklediysen */
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+ 

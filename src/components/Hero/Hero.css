@@ -1,0 +1,122 @@
+@keyframes hologramGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-container {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(90deg, #f3b0f2, #fdf5b9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  margin-top: 80px;
+}
+
+.hero-slogan {
+  font-size: 1.2rem; /* küçülttüm */
+  font-weight: bold;
+  flex-shrink: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.hero-slogan span {
+  color: #ff6600; /* turuncu */
+}
+
+.hero-slogan h2 {
+  color: #004400; /* koyu yeşil */
+  margin: 0;
+}
+
+.hero-image-container {
+  height: 100%;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  min-width: 600px;
+  display: flex;
+}
+
+/* Buton için hologram efekti ve boyut ayarı */
+.hero-button {
+  background: linear-gradient(
+    270deg,
+    #00f0ff,
+    #ff00e1,
+    #00ff98,
+    #00f0ff,
+    #ff00e1,
+    #00ff98
+  );
+  background-size: 600% 600%;
+  animation: hologramGradient 6s ease infinite;
+  color: #000;
+  font-weight: bold;
+  padding: 0.6rem 1.8rem;
+  border-radius: 50rem;
+  text-decoration: none;
+  font-size: 1rem;
+  width: fit-content;
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+  align-self: flex-start;
+  box-shadow: 0 0 8px rgba(0, 255, 152, 0.7);
+  user-select: none;
+}
+
+.hero-button:hover,
+.hero-button:active {
+  box-shadow: 0 0 20px rgba(255, 0, 225, 1);
+  color: #fff;
+  cursor: pointer;
+}
+@keyframes hologramPink {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Hologram pembe efektini başlığa uygula */
+.hero-slogan h2 {
+  background: linear-gradient(
+    270deg,
+    #ff00e1,
+    #ff66ff,
+    #ff00e1,
+    #ff66ff,
+    #ff00e1
+  );
+  background-size: 400% 400%;
+  animation: hologramPink 5s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: bold;
+  margin: 0;
+}
