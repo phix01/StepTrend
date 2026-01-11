@@ -58,8 +58,4 @@ src/
 This project is created for learning and demonstration purposes.
 No real backend, authentication, or payment integration is included.
 
-<img width="1836" height="917" alt="image" src="https://github.com/user-attachments/assets/850dceb9-d5f6-4b5d-a3f3-02b1aa8595d3" />
-
-
-<img width="1836" height="917" alt="image" src="https://github.com/user-attachments/assets/9f967599-de2c-4d00-a655-e2496da879dc" />
 
